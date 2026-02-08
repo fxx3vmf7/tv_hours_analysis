@@ -1,6 +1,7 @@
 if (!require('pacman'))install.package('pacman')
 pacman::p_load(tidyverse,here)
 
+
 tv_hours_tabulation<-gss_cat |> 
   filter(age <= 30) |> 
   group_by(marital) |> 
